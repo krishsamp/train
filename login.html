@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<title>Login</title>
+<head>
+<style>
+p.double {border-style: double;}
+body{
+background-image: url("login.jpeg");
+    background-repeat: no-repeat;
+    background-position: right top;
+	background-size: 1000px 700px;
+    margin-right: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="109.html">Home</a></li>
+  <li><a href="about.html">About us</a></li>
+  <li><a href="contact.html">Contact us</a></li>
+  <li><a href="complaint.html">Register a Complaint</a></li>
+  </ul>
+<h1><b><i><p class="double">Book your Train</h1></b></i></p>
+<form>
+Enter Source : 
+<input type="text" name="source">
+<br><br>
+Enter Destination :
+<input type="text" name="destination">
+<br><br>
+Date of Departure :
+<input type="date">
+<br><br>
+
+
+<p>Please input a number between 1 and 6:</p>
+
+No of tickets :
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 6) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+<br>
+Available trains :
+ <input list="trains" name="trains">
+  <datalist id="trains">
+    <option value="Rajdhani Express">
+    <option value="Karnavati Express">
+    <option value="Garibrath">
+    <option value="Golden Temple">
+    <option value="Loksati">
+  </datalist>
+  <br><br>
+  <nav>
+  <a href="booked.html"><font size="5">Book</font></a>
+  </nav>
+  </body>
+  </html>

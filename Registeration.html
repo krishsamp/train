@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>Registeration Form</title>
+<head>
+<style>
+div.background {
+  background: url(train.jpg) repeat;
+  border: 2px solid black;
+  background-repeat:no-repeat;
+  background-size:1400px;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="109.html">Home</a></li>
+  <li><a href="about.html">About us</a></li>
+  <li><a href="contact.html">Contact us</a></li>
+  <li><a href="complaint.html">Register a Complaint</a></li>
+  </ul>
+<div class="background">
+  <div class="transbox">
+   <h1><b><i>Registeration Form</i></b></h1>
+<form>
+ First name :
+  <input type="text" name="firstname" placeholder="no numbers" autofocus>
+  <br><br>
+  Last name :
+  <input type="text" name="lastname" placeholder="no numbers">
+<br><br>
+   E-mail :
+<input type="email" name="email" autocomplete="off" required><br><br>
+	Phone no :
+<input type="no" name="phone no" autocomplete="off" required maxlenght="10"><br><br>
+Gender : <br>
+<input type="radio" name="text" value="male"> Male<br>
+<input type="radio" name="text" value="female"> Female<br>
+<br><br>
+ Date of birth :
+ <input type="date">
+ <br><br>
+Occupation
+  <input list="occupation" name="occupation">
+  <datalist id="occupation">
+    <option value="Government">
+    <option value="Public">
+    <option value="Private">
+    <option value="Professional">
+    <option value="Self Employed">
+	<option value="Student">
+	<option value="Other">
+  </datalist>
+  <br><br>
+  Address : <br>
+  <textarea rows="5" cols="100"></textarea>
+  <br><br>
+  User Id: 
+   <input type="text" name="username" placeholder="atleast 6 characters" autofocus>
+  <br><br>
+  Password:
+  <input type="password" name="password" autofocus>
+  <br><br>
+  Confirm Password:
+  <input type="password" name="cpassword" autofocus>
+  <br><br>
+  <nav>
+   <a href="submit.html"><font size="5"> Submit <br><br><input type="reset" value="Reset"></a></font>
+</nav>
+   <br>
+</form>
+  </div>
+</div>
+</body>
+</html>

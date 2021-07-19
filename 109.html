@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    background-color: white;
+    width: 1200px;
+	height: 400px;
+    padding: 25px;
+    border: 25px solid blue;
+    margin: 5px;
+}
+div1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+div1:hover {
+    width: 100px;
+    height: 100px;
+    -webkit-transform: rotate(180deg); 
+    transform: rotate(360deg);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+	}
+h3 {
+    color: white;
+    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	
+}
+.button {
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #FF1493;
+}
+
+.button2:hover {
+    background-color: #0000FF;
+    color: white;
+}
+body{
+background-image: url("l.jpg");
+background-size: 1450px 800px;
+background-repeat: no-repeat;
+}
+</style>
+<script src="109js.js"></script>
+</head>
+<body>
+<h2><div1><img src="logo.jpg" height=100px width=100px align="left"></div1>Indian Railway Reservation</h2>
+<br><br><br>
+<div>
+<ul>
+  <li><a href="109.html">Home</a></li>
+  <li><a href="about.html">About us</a></li>
+  <li><a href="contact.html">Contact us</a></li>
+  <li><a href="complaint.html">Register a Complaint</a></li>
+  </ul>
+<br>
+<h3><font size="6">Login</h3></font>
+<form name="form" onsubmit="return validate109()" method="post">
+  <font size="5">User Id : 
+  <input type="text" name="userid">
+  <br><br>
+  Password : 
+  <input type="password" name="pwd1">
+	<br><br>
+<button type="submit" formaction="tt.html">Login!</button>
+</font>
+<br><br>
+<font size="5">
+<a href="Registeration.html" >Sign up!</font></a>
+</div>
+</body>
+</html>

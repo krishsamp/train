@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-image: url("b.jpg");
+    background-repeat: repeat-x;
+}
+table {
+    width:100%;
+}
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 6px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: lightblue;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:lightyellow;
+}
+table#t01 th {
+    background-color: black;
+    color:white;
+}
+</style>
+</head>
+<body>
+<h1><i><b>Train Time Table</b></i></h1>
+
+<table id="t01">
+  <tr>
+    <th>Train no</th>
+    <th>Train name</th> 
+    <th>Source</th>
+    <th>Departure_Time</th>
+    <th>Destination</th>
+    <th>Arrival_Time</th>
+  </tr>
+  <tr>
+    <td>2057</td>
+    <td>LTT TEN PREMIUM</td>
+    <td>LokmanyaTilak T</td>
+    <td>13:20</td>
+    <td>Tiruneveli</td>
+    <td>22:00</td>
+  </tr>
+  <tr>
+    <td>2059</td>
+    <td>PUNE ERS PREMIUM</td>
+    <td>Pune JN</td>
+    <td>18:45</td>
+    <td>Ernakulam JN</td>
+    <td>20:05</td>
+  </tr>
+  <tr>
+   <td>2065</td>
+    <td>LTT ERS PREMIUM</td>
+    <td>LokmanyaTilak T</td>
+    <td>12:50</td>
+    <td>Ernakulam JN</td>
+    <td>14:00</td>
+  </tr>
+ <tr>
+   <td>2663</td>
+    <td>ADI HBJ PREMIUM</td>
+    <td>AHEMDABAD JN</td>
+    <td>17:30</td>
+    <td>Habibganj</td>
+    <td>05:00</td>
+  </tr>
+ <tr>
+   <td>2664</td>
+    <td>HBJ ADI PREMIUM</td>
+    <td>Habibganj</td>
+    <td>22:20</td>
+    <td>AHEMDABAD JN</td>
+    <td>09:15</td>
+  </tr>
+ <tr>
+   <td>2701</td>
+    <td>SC CSTM PREMIUM</td>
+    <td>SECUNDERABAD JN</td>
+    <td>23:05</td>
+    <td>MUMBAI CST</td>
+    <td>12:15</td>
+  </tr>
+
+</table>
+<br>
+<nav>
+  <a href="login.html"><font size="5">Book</font></a>
+  </nav>
+</body>
+</html>
